@@ -29,7 +29,7 @@ export default function Listings() {
   const { data: listings, isLoading } = useQuery<Listing[]>('listings', fetchListings);
 
   return (
-    <div className="container mx-auto py-6 h-screen px-1">
+    <div className="container mx-auto py-5 h-screen px-1">
       <h1 className="text-2xl font-bold mb-4 ml-5">Listings</h1>
       <div>
         <table className="table-auto bg-white border border-gray-300">
