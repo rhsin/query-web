@@ -31,6 +31,7 @@ export default function QueryResults() {
       const data: PriceQueryResult = await response.json();
       const queryResults: QueryResult[] = Object.values(data);
       setResults(queryResults);
+      console.log(results)
     } catch (error) {
       console.log(error)
     }
@@ -74,9 +75,7 @@ export default function QueryResults() {
               <th className={headerStyle}>Execution Time (ms)</th>
               <th className={headerStyle}>Query</th>
               <th className={headerStyle}>Index Scan</th>
-              <th className={headerStyle}>Sort</th>
               <th className={headerStyle}>Sequential Scan</th>
-              <th className={headerStyle}>Filter</th>
             </tr>
           </thead>
           <tbody>
@@ -88,9 +87,7 @@ export default function QueryResults() {
                   <td className={dataStyle}>{result.executionTime}</td>
                   <td className={dataStyle}>{result.query}</td>
                   <td className={dataStyle}>{result.indexScan}</td>
-                  <td className={dataStyle}>{result.sort}</td>
                   <td className={dataStyle}>{result.seqScan}</td>
-                  <td className={dataStyle}>{result.filter}</td>
                 </tr>
               ))}
           </tbody>
