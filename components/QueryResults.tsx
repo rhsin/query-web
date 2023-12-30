@@ -70,8 +70,8 @@ export default function QueryResults() {
           <thead>
             <tr>
               <th className={headerStyle}>Name</th>
-              <th className={headerStyle}>Planning Time</th>
-              <th className={headerStyle}>Execution Time</th>
+              <th className={headerStyle}>Planning Time (ms)</th>
+              <th className={headerStyle}>Execution Time (ms)</th>
               <th className={headerStyle}>Query</th>
               <th className={headerStyle}>Index Scan</th>
               <th className={headerStyle}>Sort</th>
