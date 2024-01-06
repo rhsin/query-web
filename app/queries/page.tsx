@@ -1,10 +1,10 @@
-import QueryResults from "@/components/QueryResults"
+import Queries from "@/components/Queries"
 
-export default function Home() {
+export default function QueriesPage() {
   return (
     <main className="flex p-10">
       <div className="font-mono text-sm">
-        <QueryResults />
+        <Queries />
       </div>
     </main>
   )
